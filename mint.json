@@ -1,91 +1,136 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "docs-tryterra",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/inverted.png",
+    "light": "/logo/regular.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#0088ff",
+    "light": "#007ae6",
+    "dark": "#0088ff",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#0088ff",
+      "to": "#007ae6"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Contact sales",
+      "url": "/contact"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Start now",
+    "url": "/signup"
+  },
+  "primaryTab": {
+    "name": "Home"
   },
   "tabs": [
     {
+      "name": "Guides",
+      "url": "/docs"
+    },
+    {
+      "name": "Recipes",
+      "url": "/recipes"
+    },
+    {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "/reference"
+    },
+    {
+      "name": "Changelog",
+      "url": "/changelog"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "users",
+      "url": "https://tryterra.co/community"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://tryterra.co/blog"
     }
   ],
+  "modeToggle": {
+    "default": "dark"
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "rest api",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        {
+          "group": "API Endpoints",
+          "pages": [
+            "reference/using-the-api",
+            "reference/generate-widget-session",
+            "reference/authenticate-user",
+            "reference/deauthenticate-user",
+            "reference/get-activity-data",
+            "reference/get-athlete-data",
+            "reference/get-body-data",
+            "reference/get-daily-data",
+            "reference/get-menstruation-data",
+            "reference/get-nutrition-data",
+            "reference/get-sleep-data",
+            "reference/user-info",
+            "reference/bulk-user-info",
+            "reference/list-subscribed-users",
+            "reference/list-integrations",
+            "reference/list-integrations-detailed",
+            "reference/post-nutrition-data",
+            "reference/get-planned-workout-data",
+            "reference/post-planned-workout-data",
+            "reference/delete-planned-workout-data",
+            "reference/generate-authentication-token",
+            "reference/generate-developer-token",
+            "reference/generate-user-token"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "webhook events",
+      "pages": []
+    },
+    {
+      "group": "Mobile SDKs",
+      "pages": []
+    },
+    {
+      "group": "Terra Streaming",
+      "pages": []
+    },
+    {
+      "group": "Graphs API",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "reference/generate-live-graph",
+        "reference/view-live-graph"
       ]
     },
     {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
+      "group": "Data Models",
+      "pages": []
     },
     {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
-      ]
+      "group": "more information",
+      "pages": []
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+    "linkedin": "https://www.linkedin.com/company/terraapi",
+    "twitter": "https://twitter.com/TerraAPI",
+    "github": "https://github.com/tryterra"
+  },
+  "openapi": [
+    "/openapi-0.json",
+    "/openapi-1.json",
+    "/openapi-2.json"
+  ]
 }
